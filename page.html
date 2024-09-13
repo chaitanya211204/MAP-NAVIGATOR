@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <header>
+    <div class="navbar">
+        <div class="backtohome">
+            <!-- <i class="fa-solid fa-house"></i><input type="button"  onclick="location.href='index.html';" value="Home" />-->
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
+        </div>
+       
+        <div class="logo">
+            <img src="logo.jpg">
+        </div>
+        <div class="heading">
+            <h1>Map Navigator</h1>
+        </div>
+        <li>
+            <!-- <a href="#"><div class="guide">Guide <i class="fa-sharp fa-solid fa-caret-down"></i></a> -->
+            <div class="location">
+                <h4>GUIDE</h4>
+               <ul> 
+                <div class="zero box2">
+                    <a>0 : University Gate</a>
+                </div>
+                <div class="one box2 ">
+                    <a>1 : cafeteria</a>
+                </div>
+                <div class="two box2">
+                    <a>2 : Ground</a>
+                </div>
+                <div class="three box2 ">
+                    <a>3 : Library</a>
+                </div>
+                <div class="four box2">
+                    <a>4 : Computer Department</a>
+                </div>
+                <div class="five box2">
+                    <a>5 : Lal Chowk</a>
+                </div>
+                <div class="six box2">
+                    <a>6 : Lal Bahadur Shastri Hall</a>
+                </div>
+                <div class="seven box2 ">
+                    <a>7 : Vivekananada Auditorium</a>
+                </div>
+                <div class="eight box2">
+                    <a>8 : VC Office</a>
+                </div>
+                <div class="nine box2">
+                    <a>9 : Girls' Hostel</a>
+                </div>
+                <div class="ten box2">
+                    <a>10 : Girls Park</a>
+                </div>
+                <div class="eleven box2">
+                    <a>11 : MBA Park</a>
+                </div>
+                <div class="twelve box2">
+                    <a>12 : Teacher's apartment</a>
+                </div>
+                
+            </ul> 
+            
+            </div>
+        </li>
+        <!-- <li>
+            <a href="#"><div class="help"><i class="fa-solid fa-question"></i></a>
+                <div class="instruction">
+                    <h4 style="text-align: center;">* Steps To Follow *</h4>
+                    <p><i class="fa-solid fa-circle" style="font-size: 0.4rem; margin-left:-0.5rem;"></i> Refer the guide for initial and destination point.</p>
+                    <p><i class="fa-solid fa-circle" style="font-size: 0.4rem; margin-left:-0.5rem;"></i> Enter numbers according to the guide for your desired location.</p>
+                </div>
+        </li>
+         -->
+        </div>
+        </div>
+
+ </header>
+
+ <main>  
+    <div class="main"> 
+        <div class="contentarea">
+            <h5>** Refer the Guide for initial and destination point. **</h5>
+            <div class="content">
+                <div class="uni">
+                    <h2>J.C. Bose University of Science & Technology</h2>
+                </div>
+                <form>
+                    
+                        <p><label>Enter Your Initial Position :</label></p>
+                        <input type="text" id = "start" placeholder="Enter Here">
+                  
+                    
+                    
+                        <p><label> Enter Your Destination :</label></p>
+                        <input type="text" id = "end" placeholder="Enter Here">
+                  
+                    <button onclick="">Calculate</button>
+                    <div id="results"></div>
+                </form>              
+            </div>
+            <input type="button" class="feedback" onclick="location.href='feedback.html';" value="feedback" />
+        </div>
+    
+</div>
+</main>
+<script src="script2.js"></script>
+</body>
+
+
+</html>

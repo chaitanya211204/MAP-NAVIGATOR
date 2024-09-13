@@ -1,0 +1,844 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Verdana,Geneva,Tahoma, sans-serif;
+}
+.wrapper{
+    margin-inline: auto;
+    max-height: 100%;
+    width: auto;
+    background-image:linear-gradient(#D6C4AC,#A1987C);
+    background-size: 100%;
+   
+}
+.navbar{
+    max-height:80px;
+    width:auto;
+    font-size:1rem;
+    background-color: rgba(0, 0, 0,0.5);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-around; */
+     gap:10em;
+    margin-bottom: 4rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo img{
+    height:5.5rem;
+    background-size: cover;
+    mix-blend-mode: multiply; 
+}
+.content{
+    color:rgb(50, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:5em;
+}
+main{
+    margin:20px;
+}
+
+h1{
+    font-size:80px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: #CA4246;
+    background-image: linear-gradient(
+          45deg,#eef6f6 100%,#575858);     
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main p{
+    color:rgb(50, 48, 48);
+    margin:20px 0px 20px 0px;
+}
+main a{
+    margin:0px 0px 20px 0px;
+}
+.content2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content2 img{
+    mix-blend-mode: multiply;
+    max-height:400px;
+    width: 100%;
+    
+}
+.image img{
+    background-size:100%;
+    /* height:auto; */
+    padding:1rem;
+}
+
+/* .image img{
+    width:100%;
+    height: auto;
+    padding:0.5rem
+} */
+.heading{
+    float:left;
+    /* width:45%; */
+    
+}
+.content a{
+    text-decoration: none;
+    color:rgb(50, 48, 48);
+}
+.content a:hover{
+    color:white;
+}
+input{
+    padding:10px;
+    background-color: #fa2462;
+    border-radius: 9999px;
+    border-style: none;
+    height: 2rem;
+}
+.in-pin{
+    /* background-color: #343345; */
+    background-color: #fa2462;
+    width:100%;
+    /* max-height:2rem; */
+    border-radius: 9999px;
+    border-style: none;
+}
+
+.in-pin i{
+   position:absolute;
+   padding: 0.6rem;
+   color:white;
+}
+
+.content p:hover {
+    color:white;
+}
+
+.foot-panel{
+    margin-top: 60px;
+    font-size: 1.2rem;
+    background-color: #343345;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.to-top{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom:100px;
+    padding: 10px;
+}
+
+.to-top a{
+    color:white;
+    text-decoration: none;
+}
+
+.foot-panelcontent{
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-shrink:inherit; */
+}
+
+.box{
+    height:200px;
+    width:auto;
+    padding:1rem;
+    gap:1em;
+}
+.box p{
+    margin-bottom: 0.5rem;
+}
+
+ul a{
+    display: block;
+    font-size: small;
+    color:#686778;
+}
+.foot-panel2{
+    height:100px;
+    width:100%;
+    background-color:#343345;
+    border-top: 1px solid #686778;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.footlogo img{
+     max-height: 100px;
+     width:auto;
+     background-size: cover;
+     mix-blend-mode: multiply;
+     padding: 0.5rem;
+}
+
+.foot-panel3{
+    color:white;
+    height:100px;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 25px;
+}
+
+.copyright{
+    padding-top: 5px;
+}
+.totop{
+    position:-webkit-sticky;
+    position:sticky;
+    top:0px;
+}
+/* Media Queries */
+@media (max-width: 1200px ) {
+    h1 {
+        font-size: 60px;
+    }
+    .navbar {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 7em;   
+    }
+}
+
+@media (max-width: 1030px){
+    .navbar {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        flex-direction: row;
+        gap: 5em;
+    }
+    input{
+        max-width:11rem;
+        height: 1.9rem;
+    }
+    .in-pin i{
+        padding:0.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        flex-direction: row;
+        gap: 5em;
+    }
+    .logo img {
+        height: 4rem;
+    }
+    .foot-panel2 img{
+        height:5rem; 
+    }
+}
+
+@media (max-width: 948px) {
+    .navbar {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        flex-direction: row;
+        gap: 4em;
+    }
+    .logo img {
+        height: 4rem;
+    }
+    .foot-panel2 img{
+        height:5rem;
+    }
+}
+
+@media (max-width: 870px) {
+    .navbar {
+        font-size-adjust: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 3em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .box p{
+        font-size: 0.9rem;
+    }
+    .foot-panel2 img{
+        height:5rem;   
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 3em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 784px) {
+    .navbar {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    input{
+        font-size: small;
+        size: 0.7em;
+    }
+    .content {
+        flex-direction: row;
+        gap: 3em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .box a{
+        font-size: 0.7rem;
+    }
+    .box p{
+        font-size: 0.9rem;
+    }
+    .foot-panel2 img{
+        height:5rem;  
+    }
+    .foot-panel2{
+        height:6rem;
+    }
+    .to-top{
+        margin-bottom: 5rem;
+        font-size: 0.9rem;
+    }
+    .foot-panel3{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .navbar {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        max-width:11rem;
+        height: 1.65rem;
+    }
+    .in-pin i{
+        padding:0.5rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 2.5em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width: 700px) {
+    .navbar {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center; 
+    }
+    input{
+        max-width:10rem;
+        height: 1.5rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.9em;
+    }
+    .in-pin i{
+        padding:0.4rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 2.5em;
+    }
+    .content2 {
+        font-size: 0.9rem;
+        flex-direction: column;
+    }
+    .box a{
+        font-size: 0.6rem;
+    }
+    .box p{
+        font-size: 0.8rem;
+    }
+    .foot-panel2 img{
+        height:4rem;  
+    }
+    .foot-panel2{
+        height:6rem;
+    }
+    .to-top{
+        margin-bottom: 5rem;
+        font-size: 0.8rem;
+    }
+    .foot-panel3{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .navbar {
+        font-size: 0.75rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        max-width:10rem;
+        height: 1.5rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.9em;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 2.5em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: center; 
+    }
+    input{
+        max-width:10rem;
+        height: 1rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.8em;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 2.5em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 628px) {
+    .navbar {
+        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: center;      
+    }
+    input{
+        max-width:9rem;
+        height: 1rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.8em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 2.2em;
+    }
+    .content2 {
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+    .to-top{
+        font-size: 0.8rem;
+    }
+    .box p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 596px) {
+    .navbar {
+        font-size: 0.6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        max-width:8.5rem;
+        height: 1rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.8em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        color: rgb(32, 32, 32);
+        flex-direction: row;
+        gap: 2.2em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .box a{
+        font-size: 0.6rem;
+    }
+    .box p{
+        font-size: 0.7rem;
+    }
+    .foot-panel2 img{
+        height:3.5rem; 
+    }
+    .foot-panel2{
+        height:3rem;
+    }
+    .to-top{
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+    .foot-panel3{
+        font-size: 0.5rem;
+    }
+} 
+
+@media (max-width: 550px) {
+    .navbar {
+        font-size: 0.6rem;
+        flex-direction: column;
+        align-items: center;      
+    }
+    input{
+        max-width:7rem;
+        height: 1rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.8em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        color: rgb(32, 32, 32);
+        flex-direction: row;
+        gap: 2.2em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width: 500px) {
+    .navbar {
+        font-size: 0.6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        height: 3.5rem;
+    }
+    input{
+        max-width:7rem;
+        height: 1rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.7em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+    .content {
+        color: rgb(32, 32, 32);
+        flex-direction: row;
+        gap: 1.75em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .box a{
+        font-size: 0.5rem;
+    }
+    .box p{
+        font-size: 0.6rem;
+    }
+    .foot-panel2 img{
+        height:3.5rem;
+       
+    }
+    .foot-panel2{
+        height:3rem;
+    }
+    .to-top{
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+    .foot-panel3{
+        font-size: 0.5rem;
+    }
+} 
+
+@media (max-width: 472px) {
+    .navbar {
+        font-size: 0.55rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        height: 3rem;
+    }
+    input{
+        max-width:6rem;
+        height: 0.9rem;
+    }
+    .in-pin ::placeholder{
+        font-size: 0.65em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .content {
+        color: rgb(32, 32, 32);
+        flex-direction: row;
+        gap: 1.9em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .heading p{
+        font-size: 0.7rem;
+    }
+    .heading a{
+        font-size: 0.7rem;
+    }    
+} 
+
+@media (max-width: 420px) {
+    .navbar {
+        font-size: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        height: 2.5rem;
+    }
+    input{
+        max-width:6rem;
+        height: 0.9rem;
+    }
+    .in-pin ::placeholder{
+        color: rgb(12, 12, 12);
+        font-size: 0.5em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+
+    .content {
+        color: rgb(12, 12, 12);
+        flex-direction: row;
+        gap: 2.3em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .box a{
+        font-size: 0.4rem;
+    }
+    .box p{
+        font-size: 0.55rem;
+    }
+    .foot-panel2 img{
+        height:3.5rem;
+       
+    }
+    .foot-panel2{
+        height:3rem;
+    }
+    .to-top{
+        font-size: 0.55rem;
+        margin-bottom: 2rem;
+    }
+    .foot-panel3{
+        font-size: 0.5rem;
+    }
+} 
+
+@media (max-width: 405px) {
+    .navbar {
+        font-size: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        height: 2.5rem;
+    }
+    input{
+        max-width:5.5rem;
+        height: 0.8rem;
+    }
+    .in-pin ::placeholder{
+        color: rgb(12, 12, 12);
+        font-size: 0.5em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .content {
+        color: rgb(12, 12, 12);
+        flex-direction: row;
+        gap: 1.5em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .heading p{
+        font-size: 0.6rem;
+    }
+    .heading a{
+        font-size: 0.65rem;
+    }    
+} 
+
+@media (max-width: 372px) {
+    .navbar {
+        font-size: 0.45rem;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .logo img {
+        height: 2.5rem;
+    }
+    input{
+        max-width:5.5rem;
+        height: 0.6rem;
+    }
+    .in-pin ::placeholder{
+        color: rgb(12, 12, 12);
+        font-size: 0.5em;
+        font-weight:550;
+    }
+    .in-pin i{
+        padding:0.3rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        color: rgb(12, 12, 12);
+        flex-direction: row;
+        gap: 1.5em;
+    }
+    .content2 {
+        flex-direction: column;
+    }
+    .heading p{
+        font-size: 0.5rem;
+    }
+    .heading a{
+        font-size: 0.5rem;
+    }    
+    .box a{
+        font-size: 0.3rem;
+    }
+    .box p{
+        font-size: 0.4rem;
+    }
+    .foot-panel2 img{
+        height:3rem; 
+    }
+    .foot-panel2{
+        height:3rem;
+    }
+    .to-top{
+        font-size: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .foot-panel3{
+        font-size: 0.4rem;
+    }
+} 
